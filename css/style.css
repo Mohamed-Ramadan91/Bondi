@@ -13,6 +13,18 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--second-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow-color);
+}
 ul {
   list-style: none;
 }

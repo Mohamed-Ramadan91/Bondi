@@ -1,0 +1,184 @@
+/*=================== Variables ===================*/
+:root {
+  --main-color: #19283f;
+  --second-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --second-bg-color: #eff7fa;
+}
+/*=================== General Rules ===================*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.main-color {
+  background-color: var(--main-color) !important;
+}
+.main-txt-color {
+  color: white;
+}
+.second-bg-color {
+  background-color: var(--second-bg-color);
+}
+.yellow-bg-color {
+  background-color: var(--yellow-color);
+}
+.red-btn {
+  background-color: var(--red-color);
+  color: #fff;
+  padding: 10px;
+}
+.green-btn,
+.red-btn:hover {
+  background-color: var(--second-color);
+  color: #fff;
+}
+.main-txt-color {
+  color: var(--main-color);
+}
+.green-txt-color {
+  color: var(--second-color);
+}
+.yellow-txt-color {
+  color: var(--yellow-color);
+}
+.pointer {
+  cursor: pointer;
+}
+/*=================== Special Title ===================*/
+.special-title img {
+  width: 80px;
+}
+.special-title .sm-line {
+  width: 130px;
+  height: 3px;
+  background-color: var(--second-color);
+}
+/*=================== Nav Bar ===================*/
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--second-color) !important;
+}
+/*=================== Landing Page ===================*/
+.landing {
+  display: block;
+  height: calc(100vh);
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landing .container .txt {
+  width: fit-content;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.425);
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/*=================== Services ===================*/
+.services .cards .card {
+  max-width: 350px;
+}
+.services .cards .card .icons {
+  position: relative;
+}
+.services .cards .card .icons svg:first-of-type {
+  opacity: 0.1;
+  display: block;
+}
+.services .cards .card .icons svg:last-of-type {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+/*=================== Portfolio ===================*/
+.portfolio ul li {
+  cursor: pointer;
+  padding: 7px;
+}
+.portfolio ul li.active,
+.portfolio ul li:hover {
+  background-color: var(--red-color);
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.portfolio .container .cards .category.active {
+  display: flex !important;
+}
+.portfolio .container .cards .category {
+  display: none !important;
+}
+.portfolio figure {
+  max-width: 300px;
+  cursor: pointer;
+}
+.portfolio figure img {
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+.portfolio figure:hover > img {
+  filter: grayscale();
+  transform: scale(1.1) rotate(4deg);
+  -webkit-transform: scale(1.1) rotate(4deg);
+  -moz-transform: scale(1.1) rotate(4deg);
+  -ms-transform: scale(1.1) rotate(4deg);
+  -o-transform: scale(1.1) rotate(4deg);
+  -webkit-filter: grayscale();
+}
+/*=================== About ===================*/
+.about .txt-top {
+  max-width: 450px;
+}
+/*=================== Meet Team ===================*/
+.meet-team .boxes .box:hover > img {
+  filter: grayscale();
+  -webkit-filter: grayscale();
+}
+/*=================== Subscribe ===================*/
+.subscribe form {
+  flex: 1;
+  width: 100%;
+}
+.subscribe form input[type="email"] {
+  border-color: transparent;
+  border-bottom-color: #fff;
+  width: 100%;
+  outline: none;
+}
+.subscribe form input[type="email"]::placeholder {
+  color: #fff;
+}
+.subscribe form input[type="submit"] {
+  width: fit-content;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px;
+}
+/*=================== Footer ===================*/
+footer a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 0;
+}
+footer .developer a {
+  color: var(--yellow-color);
+}
